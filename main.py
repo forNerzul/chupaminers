@@ -21,7 +21,7 @@ def netcat (miner_ip,port,content):
     sock.shutdown(socket.SHUT_WR)
 
     res = ""
-
+#
     while True:
         data = sock.recv(1024)
         if (not data):
