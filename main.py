@@ -33,8 +33,7 @@ def netcat (miner_ip,port,content):
     sock.close()
     res_as_json = json.loads(res[:-1])
     return res_as_json
-
-#   
+  
 content = '{"command":"addpool stratum2+tcp://192.168.10.222/u95GEReVMjK6k5YqiSFNqqTnKU4ypU2Wm8awa6tmbmDmk1bWt\,penguindigital.16x214\,123"}'
 
 cosito = netcat(miner_ip, port, content.encode())
